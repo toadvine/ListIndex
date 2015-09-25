@@ -3,9 +3,10 @@ __author__ = 'benjamin_sanchez'
 def main():
     a_toss = int(input())
     b_list = [int(x) for x in input().split()]
-    sorted_b_list = b_list.sort()
-    for x in sorted_b_list:
-        print(b_list.index(), end=" ")
+    c_list = list(b_list)
+    c_list.sort()
+    for x in c_list:
+        print(b_list.index(x) + 1, end=" ")
 
 
 main()
